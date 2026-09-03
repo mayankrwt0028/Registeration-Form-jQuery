@@ -1,0 +1,236 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+
+
+form {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+
+form > div {
+  margin-bottom: 18px;
+}
+
+
+label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+label span {
+  color: red;
+}
+
+
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #2563eb;
+}
+
+
+
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+
+
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+
+
+#country,
+#state,
+#city {
+  display: block;
+  margin: 15px auto;
+  max-width: 590px;
+}
+
+
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+
+
+label.error {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+input.error,
+select.error {
+  border-color: #dc2626;
+}
+
+
+
+
+#userTable {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#userTable thead th {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+}
+
+#userTable tbody td {
+  padding: 11px;
+}
+
+#userTable tbody tr:hover {
+  background: #f1f5f9;
+}
+.gender-group {
+  margin-bottom: 18px;
+}
+
+.main-label {
+  margin-right: 15px;
+}
+
+.radio-label {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.radio-label input {
+  margin-right: 5px;
+}
+
+button[type="reset"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="reset"]:hover {
+  background: #f1f1f1;
+}
+
+.editBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background: #1d4ed8;
+}
+
+.deleteBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.deleteBtn:hover {
+  background: #b91c1c;
+}
+
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 20px 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  #userTable {
+    font-size: 13px;
+  }
+
+}
+

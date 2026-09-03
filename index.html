@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Registration Form</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.3.3/css/dataTables.dataTables.min.css"
+    />
+
+    <script src="https://cdn.datatables.net/2.3.3/js/dataTables.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+      <div>
+        <label for="name"> Name <span>*</span> </label>
+
+        <input type="text" id="name" name="name"  placeholder="Enter your name"/>
+      </div>
+
+      <div>
+        <label for="aadhaar"> Aadhaar <span>*</span> </label>
+
+        <input type="text" id="aadhaar" name="aadhaar" placeholder="Aadhaar Number"/>
+      </div>
+
+      <div>
+        <label for="contact"> Contact <span>*</span> </label>
+
+        <input type="text" id="contact" name="contact" placeholder="Contact No." />
+      </div>
+
+      <div class="date-wrapper">
+        <label for="dob"> Date of Birth <span>*</span> </label>
+
+        <input type="date" id="dob" name="dob" />
+      </div>
+
+      <div>
+        <input type="checkbox" id="is18" name="is18" />
+
+        <label for="is18"> Are you 18+? </label>
+      </div>
+
+      <div class="gender-group">
+        <label class="radio-label"> Gender <span>*</span> </label>
+
+        <label class="radio-label">
+          <input type="radio" name="gender" value="Male" />
+          Male
+        </label>
+
+        <label class="radio-label">
+          <input type="radio" name="gender" value="Female" />
+          Female
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="gender" value="Other" />
+          Other
+        </label>
+        <div class="gender-error"></div>
+      </div>
+
+      <div>
+        <label for="country"> Country <span>*</span> </label>
+
+        <select id="country" name="country">
+          <option value="">Select Country</option>
+          <option value="India">India</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="state"> State <span>*</span> </label>
+
+        <select id="state" name="state">
+          <option value="">Select State</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="city"> City <span>*</span> </label>
+
+        <select id="city" name="city">
+          <option value="">Select City</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="address"> Address <span>*</span> </label>
+
+        <input type="text" id="address" name="address" placeholder="Enter your Address" />
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Aadhaar</th>
+          <th>Contact</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>City</th>
+          <th>Address</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
