@@ -203,6 +203,11 @@ $("#contact").on("input", function () {
     info:false,
 
     columns: [
+      {data:null,
+        render: function(data, type, row, meta){
+          return meta.row +1
+        }
+      },
       { data: "name" },
       { data: "aadhaar" },
       { data: "contact" },
